@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.16)
 project(intro)
 
 if(MSVC)
-	add_compile_options(\W4)
+	add_compile_options(/W4)
 else()
 	add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
