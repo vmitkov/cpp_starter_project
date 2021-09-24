@@ -3,8 +3,11 @@ sudo: false
 language: cpp
 
 addons: 
-        packages:
-                - g++
+        apt:
+                sources:
+                        - sourceline: "ppa:ubuntu-toolchain-r/test"
+                packages:
+                        - g++-5
 script:
         - CXX=/usr/bin/g++ CC=/usr/bin/gcc cmake .
         - cmake --build . -- -j2
