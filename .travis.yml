@@ -4,7 +4,7 @@ language: cpp
 
 addons: 
         apt:
-                - ubuntu-toolchain-r-test
+                - ubuntu-toolchain-r/test
         packages:
                 - g++-5
 script:
